@@ -47,3 +47,4 @@ if __name__ == '__main__':
     print(f'Triagle color {triagle.color}, is filled {triagle.is_filled}, radius about {triagle.width} cm & height {triagle.height} cm')
     triagle.described()
     print()
+# EOF    
