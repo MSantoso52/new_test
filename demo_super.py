@@ -1,4 +1,5 @@
 # demo super() in python
+# Python Program to demonstrate reuse class & inheritance 
 
 class Shape:
     def __init__(self, color, is_filled):
