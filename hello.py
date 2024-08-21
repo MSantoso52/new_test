@@ -19,8 +19,8 @@ class Hello:
     def setAge(self, age):
         try:
             self._age = int(age)
-        except (ValueError) as e:
-            print(e)
+        except ValueError:
+            print("Invalid integer value!")
 
     def __repr__(self)->None:
         return f'Hello {self._name}, happy pythoning at {self._age} years old!'
