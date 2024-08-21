@@ -35,6 +35,7 @@ if __name__ == "__main__":
     hello.setName(myName)
 
     myAge = input("Enter your age: ")
+    hello.setAge(myAge)
 
     print(hello.__repr__())
 
