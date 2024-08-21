@@ -1,29 +1,41 @@
 #!/usr/share/python
+# python program to demonstrate hello world in OOP style
 
 class Hello:
-    _name = "Mulyo"
 
-    def __init__(self, name=_name):
-        self.name = name
+    def __init__(self, name, age)->None:
+        self._name = name
+        self._age = age
 
-    def getName(self):
-        return self.name
+    def getName(self)->str:
+        return self._name
 
-    def setName(self, name):
-        self.name = name
+    def setName(self,name):
+        self._name = name
 
-    def __repr__(self):
-        return f'Hello {self.name}, happy pythoning!'
+    def getAge(self)->int:
+        return self._age
+
+    def setAge(self, age):
+        try:
+            self._age = int(age)
+        except (ValueError) as e:
+            print(e)
+
+    def __repr__(self)->None:
+        return f'Hello {self._name}, happy pythoning at {self._age} years old!'
 
 
 if __name__ == "__main__":
 
-    hello = Hello()
+    hello = Hello("Mulyo Santoso", 43)
     print(hello.__repr__())
 
     myName = input("Enter your name: ")
     hello.setName(myName)
 
+    myAge = input("Enter your age: ")
+
     print(hello.__repr__())
 
-
+    
